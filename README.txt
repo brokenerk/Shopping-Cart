@@ -1,1 +1,1 @@
-Index URL: https://localhost:8080/ramos_diaz/products
+Visit the page: https://shopping-cart-wad.herokuapp.com/products
