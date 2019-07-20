@@ -9,11 +9,12 @@
     <![CDATA[<!DOCTYPE html>]]>
   </jsp:text>
 
-<html lang="es-MX">
+<html>
 <head>
 	<title>Login</title>
-	<meta charset="UTF-8"/>
+	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta http-equiv="x-ua-compatible" content="ie=edge"/>
 <!--==============================================================================================================================================================================================-->
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/components/login/vendor/bootstrap/css/bootstrap.min.css"/>
 <!--===============================================================================================-->
