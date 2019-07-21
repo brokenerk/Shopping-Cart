@@ -19,8 +19,8 @@
 <body>
 	<h1 class="my-4">Completed Orders</h1>
 
-	<div class="row">
-		<table class="table table-striped table-hover table-responsive table-fixed">
+	<div class="table-responsive">
+		<table class="table table-striped table-hover table-fixed">
 			<thead class="thead-dark">
 				<tr>
 					<th>Order ID</th>

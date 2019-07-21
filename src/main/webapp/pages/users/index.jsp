@@ -19,10 +19,8 @@
 <body>
 
 	<h1 class="my-4">Account Info</h1>
-	<div class="row">
-		<div class="col-lg-6 col-md-8 mb-6">
-
-			<div class="card h-500">
+	<div class="card-deck">
+			<div class="card">
 				<div class="card-body">
 					<h5 class="card-title text-primary">Personal Info</h5>
 					<p class="card-text">User ID: ${model.id}</p>
@@ -35,9 +33,8 @@
 					<a href="${pageContext.request.contextPath}/orders" class="btn btn-info">Completed Orders</a>
 				</div>
 			</div>
-		</div>
-		<div class="col-lg-6 col-md-8 mb-6">
-			<div class="card h-500">
+
+			<div class="card">
 				<div class="card-body">
 					<h5 class="card-title text-primary">Address</h5>
 					<p class="card-text">Street: ${model.street}</p>
@@ -54,8 +51,6 @@
 					</s:form>
 				</div>
 			</div>
-		</div>
-		<p class="text-white">aaa</p>
 	</div>
 
 </body>

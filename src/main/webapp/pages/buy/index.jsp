@@ -21,9 +21,9 @@
 	<h1 class="my-4">Proceed to checkout</h1>
 	<s:fielderror fieldName="buyError" class="text-danger"/>
 
-	<div row="row">
-		<div class="row">
-			<table class="table table-striped table-hover table-responsive">
+
+		<div class="table-responsive">
+			<table class="table table-striped table-hover">
 			<thead class="thead-dark">
 				<tr>
 					<th>Image</th>
@@ -58,9 +58,8 @@
 			</table>
 		</div>
 
-		<div class="row">
-			<div class="col-lg-6 col-md-8 mb-6">
-				<div class="card h-500">
+		<div class="card-deck">
+				<div class="card">
 					<div class="card-body">
 						<h5 class="card-title text-primary">Address</h5>
 						<p class="card-text">Street: ${model.street}</p>
@@ -77,9 +76,8 @@
 						</s:form>
 					</div>
 				</div>
-			</div>
-			<div class="col-lg-6 col-md-8 mb-6">
-				<div class="card h-500">
+
+				<div class="card">
 					<s:form id="card-form"
 						action="%{#pageContext.request.contextPath}/buy"
 						method="post" theme="simple">
@@ -100,21 +98,21 @@
 						</div>
 
 						<div class="form-group row">
-							<div class="col-md-4">
+							<div class="col-4">
 								<label for="" class="text-dark">Exp Month</label>
 								<s:textfield cssClass="form-control" cssErrorClass="is-invalid" id="txExpMonth" name="expMonth" placeholder="12" data-conekta="card[exp_month]"/>
 							</div>
-							<div class="col-md-4">
+							<div class="col-4">
 								<label for="" class="text-dark">Exp Year</label>
 								<s:textfield cssClass="form-control" cssErrorClass="is-invalid" id="txExpYear" name="expYear" placeholder="2022" data-conekta="card[exp_year]"/>
 							</div>
-							<div class="col-md-4">
-								<label for="" class="text-dark">CVC</label>
-								<s:textfield cssClass="form-control" cssErrorClass="is-invalid" id="txCvc" name="cvc" data-conekta="card[cvc]"/>
+							<div class="col-4">
+								<label for="" class="text-dark">Security CVC</label>
+								<s:password cssClass="form-control" cssErrorClass="is-invalid" id="txCvc" name="cvc" data-conekta="card[cvc]"/>
 							</div>
 						</div>
 						<div class="row" style="padding:10px;">
-							<img src="${pageContext.request.contextPath }/imgs/credit-cards.png" height="65"/>
+							<img src="${pageContext.request.contextPath }/imgs/credit-cards.png" width="100%"/>
 						</div>
 					</div>
 					<div class="card-footer" id="credit-card-footer">
@@ -122,11 +120,8 @@
 					</div>
 				</s:form>
 				</div>
-			</div>
-
-			<p class="text-white">aaa</p>
 		</div>
-	</div>
+
 
 	
 <jsp:text>

@@ -30,8 +30,8 @@
 		</s:if>
 		
 			
-		<div class="row">
-		<table class="table table-striped table-hover table-responsive">
+		<div class="table-responsive">
+		<table class="table table-striped table-hover">
 			<thead class="thead-dark">
 				<tr>
 					<th>Image</th>

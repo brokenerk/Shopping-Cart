@@ -23,8 +23,8 @@
 	</div>
 
 		
-	<div class="row">
-		<table class="table table-striped table-hover table-responsive table-fixed">
+	<div class="table-responsive">
+		<table class="table table-striped table-hover table-fixed">
 			<thead class="thead-dark">
 				<tr>
 					<th>Image</th>
@@ -55,10 +55,8 @@
 			</tbody>
 		</table>
 	</div>
-			
-	<div class="row">
-		<a class="btn btn-info" href="${pageContext.request.contextPath}/orders">Return to orders</a>
-	</div>
+	<br/>
+	<a class="btn btn-info" href="${pageContext.request.contextPath}/orders">Return to orders</a>
 </body>
 </html>
 </jsp:root>

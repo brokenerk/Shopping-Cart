@@ -18,13 +18,12 @@
 </head>
 <body>
 		<h1 class="my-4">Products</h1>
-		<div class="row">
+		<div class="card-columns">
 
 		<s:iterator value="listProducts" var="product">
 			<s:set var="product.id">${product.id}</s:set>
 
 
-			<div class="col-lg-4 col-md-4">
 		        <div class="card h-400">
 		          <img class="card-img-top" src="${pageContext.request.contextPath}/imgs/products/${product.id}.jpg" width="100" alt=""/>
 		          <div class="card-body">
@@ -56,8 +55,6 @@
 		          	</s:if>
 		          </div>
 		        </div>
-		        <br/>
-		      </div>
 		</s:iterator>
 		</div>
 </body>

@@ -45,7 +45,9 @@
 			<span class="login100-form-title p-t-20 p-b-45">
 				Login
 			</span>
-				<decorator:body/>
+			
+			<decorator:body/>
+			<br/>	
 			<div class="text-center w-full">
 				<a class="txt1" href="${pageContext.request.contextPath}/register">
 					Create new account						
